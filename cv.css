@@ -111,7 +111,7 @@ input:not([type=submit]), textarea{
   min-width: 80vw;
 }
 td{
-  padding: .1vh 1vh;
+  padding: .4vw 1vw;
 }
 #item3, #item4{
   width: 90vw;
