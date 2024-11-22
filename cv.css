@@ -104,8 +104,8 @@ li{
     row-gap: 2.5vh;
   }
   img{
-    height: 3vh;
-    width: 3vh;
+    height: 2vh;
+    width: 2vh;
   }
   input[type=submit]{
     min-width: 20vw;
@@ -114,7 +114,7 @@ input:not([type=submit]), textarea{
   min-width: 80vw;
 }
 td{
-  padding: .1vh .4vh;
+  padding: .1vh 1vh;
 }
 #item3, #item4{
   width: 90vw;
