@@ -6,12 +6,12 @@
   <link rel="stylesheet" href="cv.css"/>
   <title>Краткое резюме</title>
 </head>
-<body>
+<body onbeforeunload ="reset();">
   <table id="item1" style="border-collapse: collapse;">
     <tr> <td><img src="profile.png"/></td> <td>Полуянов Александр</td> </tr>
     <tr> <td><img src="home.png"/></td><td>Альметьевск, Россия</td> </tr>
     <tr> <td><img src="phone.png"/></td><td>+7(950)-309-94-87</td> </tr>
-    <tr> <td><img src="gmail.svg"/></td><td>mypostalpoint@gmail.com</td> </tr>
+    <tr> <td><img src="gmail.svg"/></td><td>postalbox112000@gmail.com</td> </tr>
     <tr> <td><img src="email.svg"/></td><td>mailbox112000@mail.ru</td> </tr>
     <tr> <td><img src="github.svg"/></td><td><a href="https://github.com/Coder1382" target="_blank">Профиль на GitHub</a></td> </tr>
     <tr>
@@ -19,12 +19,12 @@
     </tr>
   </table>
   <form id="item2" action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="46d56803-8edc-4264-b99c-8f6e4d6eecc0">
     <label style="font-style: italic;">Обратная связь</label>
-    <input class="fm" type="hidden" name="access_key" value="46d56803-8edc-4264-b99c-8f6e4d6eecc0">
     <input class="fm" type="text" name="name" placeholder="имя" maxlength="40" required>
     <input class="fm" type="email" name="email" placeholder="эл. почта" maxlength="40" required>
-    <textarea class="fm" rows="10" placeholder="сообщение" required></textarea>
-    <input class="fm" type="submit" value="отправить" onclick="send();"/>
+    <textarea class="fm" rows="10" name="message" placeholder="сообщение" required></textarea>
+    <input class="fm" type="submit" value="отправить"/>
   </form>
   <div id="item3">
     <h3>О себе</h3>
@@ -99,4 +99,11 @@
     </section>
   </div>
 </body>
+<script>
+  function reset(){
+    document.getElementsByClassName("fm")[0].value="";
+    document.getElementsByClassName("fm")[1].value="";
+    document.getElementsByClassName("fm")[2].value="";
+  }
+</script>
 </html>
