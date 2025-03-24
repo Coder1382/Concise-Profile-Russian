@@ -5,47 +5,54 @@
 }
 body,html{
   width: 100vw;
-  height: 100vh;
+  height: auto;
 }
 body{
-  padding: 2.5vh 2.5vw 2.5vh 3.5vw;
   font-size: 1.2em;
-  font-family: 'Courier New', Courier, monospace;
-  display: grid;
-  row-gap: 5vh;
-  column-gap: 5vw;
-  background-color:beige;
+  font-family: Courier, monospace;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color:whitesmoke;
 }
-h3{
+#aside, #main{
+  height: inherit;
+  padding: 2vh 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+#aside{
+	row-gap: .2vh;
+	width: 30vw;
+	align-items: start;
+}
+#main{
+	width: 70vw;
+	align-items: end;
+	background-color: white;
+}
+#name{
+  text-align: center;
+  padding-right: 20vw;
+}
+#contacts, #form{
   text-align: center;
 }
-#item1{
-  grid-row: 1;
-}
-#item2{
-  grid-row: 2;
-}
-#item1, #item2{
-  grid-column: 1;
-  text-align: center;
-}
-#item3{
-  grid-column: 2;
-  grid-row: 1 / span 2;
-  width: 62vw;
-}
-#item4{
-  grid-column: 1 / span 3;
-  grid-row: 3;
-  width: 92vw;
-}
-#item3,#item4{
+#summary, #pets{
+  width: 100%;
   line-height: 4.2vh;
 }
 td{
   padding: .2vh .2vh;
+  text-align: start;
 }
-img{
+#foto{
+	width: 10vh;
+	height: auto;
+}
+img:not(#foto){
   height: 4vh;
   width: 4vh;
 }
@@ -53,7 +60,7 @@ form{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
+  align-items: start;
   row-gap: .5vh;
 }
 .fm{
@@ -89,6 +96,9 @@ input[type=submit]:hover{
 li{
   margin-left: 2vw;;
 }
+.td{
+	padding-left: 1vw;
+}
 @media only screen and (max-width: 768px){
   body{
     width: 100vw;
@@ -100,9 +110,16 @@ li{
     align-items: center;
     row-gap: 2.5vh;
   }
-  img{
+  #aside, #main{
+	align-items: center;
+  }
+  img:not(#foto){
     height: 4vw;
     width: 4vw;
+  }
+  #foto{
+    height: 10vw;
+    width: 10vw;
   }
   input[type=submit]{
     min-width: 20vw;
@@ -113,7 +130,7 @@ input:not([type=submit]), textarea{
 td{
   padding: .3vw .8vw;
 }
-#item3, #item4{
+#summary, #pets, #{
   width: 90vw;
 }
 }
