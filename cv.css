@@ -115,15 +115,15 @@ li{
     row-gap: 2.5vh;
   }
   #aside, #main{
-	align-items: center;
-	width: 100vw;
+	align-items: start;
+	width: 90vw;
 	background-color: white;
   }
-  img:not(#foto){
+  img:not(#Foto){
     height: auto;
     width: 3.2vw;
   }
-  #foto{
+  #Foto{
     height: auto;
     width: 12vw;
   }
@@ -135,7 +135,6 @@ input:not([type=submit]), textarea{
 }
 td{
   padding: .3vw .8vw;
-  text-align: left;
 }
 #summary, #pets, #{
   width: 90vw;
@@ -145,8 +144,5 @@ td{
 }
 .show{
 	display: block;
-}
-#name{
-	padding-left: 0;
 }
 }
