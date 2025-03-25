@@ -116,6 +116,7 @@ li{
   }
   #aside, #main{
 	align-items: center;
+	width: 100vw;
   }
   img:not(#foto){
     height: auto;
@@ -123,7 +124,7 @@ li{
   }
   #foto{
     height: auto;
-    width: 8vw;
+    width: 10vw;
   }
   input[type=submit]{
     min-width: 20vw;
@@ -136,5 +137,8 @@ td{
 }
 #summary, #pets, #{
   width: 90vw;
+}
+.hide{
+	display: none;
 }
 }
