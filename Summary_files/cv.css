@@ -49,7 +49,7 @@ td{
   text-align: start;
 }
 #foto{
-	width: 10vw;
+	width: 8vw;
 	height: auto;
 }
 img:not(#foto){
@@ -63,7 +63,7 @@ form{
   align-items: start;
   row-gap: .5vh;
 }
-.form{
+.fm{
   outline: none;
   font-size: 1em;
   border-radius: 1vh;
@@ -72,16 +72,16 @@ input{
   height: 4vh;
   text-align: center;
 }
-.form:not(input[type=submit]):hover{
+.fm:not(input[type=submit]):hover{
   border: .2vh solid lightseagreen;
 }
-.form:not(input[type=submit]){
+.fm:not(input[type=submit]){
   border: .1vh dashed #999;
   width: 25vw;
-  padding: 0 .5vw;
+  padding: 0 1vw;
 }
 textarea{
-  padding: 1vh 1vw;
+  padding: 2vh 2vw;
   width: 25vw;
 }
 input[type=submit]{
@@ -122,8 +122,8 @@ li{
     width: 3.2vw;
   }
   #foto{
-    height: 10vw;
-    width: 10vw;
+    height: auto;
+    width: 8vw;
   }
   input[type=submit]{
     min-width: 20vw;

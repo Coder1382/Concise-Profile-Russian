@@ -8,32 +8,28 @@
   <title>Резюме</title>
 </head>
 <body onbeforeunload ="reset();">
-  <section id="aside"></br>
-  <img id="foto" src="foto.png"/></br>
+  <section id="aside">
+  <img id="foto" src="foto.png"/>
   <table id="contacts" style="border-collapse: collapse;">
     <tr> <td><img src="phone.png"/></td><td class="td">+7(950)-309-94-87</td> </tr>
     <tr> <td><img src="email.png"/></td><td class="td">postalbox112000@gmail.ru</td> </tr>
     <tr> <td><img src="github.svg"/></td><td class="td"><a href="https://github.com/Coder1382" target="_blank">GitHub</a></td> </tr>
 	<tr> <td><img src="teleg.png"/></td><td class="td">@tgwnik</td> </tr>
 	<tr> <td><img src="home.png"/></td><td class="td">Альметьевск, Россия</td> </tr>
-  </table></br>
-  <p>
+  </table>
+  <ul>
 	<h3>Навыки</h3>
-	<ul>
-		<li>Java, Spring, Hibernate, SQL, Postgres, Maven/Gradle</li>
-		<li>JavaScript, jQuery, React, HTML, CSS</li>
-		<li>C/C++, Python</li>
-		<li>Linux, Windows, СУБД, ООП, алгоритмы</li>
-		<li>Английский на уровне Intermediate</li>
-	</ul>
-  </p></br>
-  <p>
+	<li>Java, Spring, Hibernate, SQL, Postgres, Maven/Gradle</li>
+	<li>JavaScript, jQuery, React, HTML, CSS</li>
+	<li>C/C++, Python</li>
+	<li>Linux, Windows, СУБД, ООП, алгоритмы</li>
+	<li>Английский на уровне Intermediate</li>
+  </ul>
+  <ul>
 	<h3>Образование</h3>
-	<ul>
-		<li>Школа программирования 21 от Сбера</li>
-		<li>Высшее образование по специальности Геолог, КФУ</li>
-	</ul>
-  </p></br>
+	<li>Школа программирования 21 от Сбера</li>
+	<li>Высшее образование по специальности Геолог, КФУ</li>
+  </ul>
   <form id="form" action="https://api.web3forms.com/submit" method="POST">
     <input type="hidden" name="access_key" value="6029fa72-a5bd-4805-b02c-80fdf99243ab">
     <h3>Обратная связь</h3>
@@ -42,15 +38,11 @@
     <textarea class="form" rows="8" name="message" placeholder="сообщение" required></textarea>
     <input class="form" type="submit" name="send" value="send"/>
   </form>
-  </section></br>
-  <section id="main"></br>
-	<div id="name">
-		<h3>Александр Полуянов</h3>
-		<h3>Full-stack/Backend/Frontend разработчик</h3>
-	</div></br>
-  <div id="summary">
-    <h3>Общая информация</h3>
-    <ul>
+  </section>
+  <section id="main">
+		<h3 id="name">Александр Полуянов</br>Full-stack/Backend/Frontend разработчик</h3>
+    <ul id="summary">
+		<h3>Общая информация</h3>
 		<li>По окончании Казанского Федерального университета работал на объектах добычи нефти и газа.</li>
 		<li>Со временем решил перейти в сферу ИТ, потому что заинтересован в личном развитии. Изучал языки программирования по соответствующим
 		книгам, роликам в интернете, и практикуясь в программировании самостоятельно.</li>
@@ -58,7 +50,6 @@
 		<li>В октябре 2023 года поступил в Школу 21 от Сбербанка. Достигнув 10-го уровня, решил специализироваться на языке Java.</li>
 		<li>Планирую работать full-stack разработчиком, потому что имею опыт использования как frontend, так и backend инструментов.</li>
 	</ul>
-  </div></br>
   <ul id="pets">
     <h3>PET-проекты</h3>
 	<li>
@@ -74,27 +65,27 @@
     <a href="https://github.com/Coder1382/Browser-Game">Browser Game (JavaScript, HTML, CSS)</a>
 	В игре нужно уворачиваться от движущихся препятствий. Поиграть можно по <a href="https://coder1382.github.io/Browser-Game/">ссылке</a>.
 	</li>
-	<li style="margin-top: 2vh;">
+	<li>
 		<a style="padding-top: 1vh;" href="https://github.com/Coder1382/Rogue-Game-Java/tree/master">Rogue Game (Java Core)</a>.
 		Видео игры по <a href="https://drive.google.com/file/d/1-lenlRSYGwQfxPCCLxJW8Og_fv8Bx-ne/view?usp=drive_link">ссылке</a>.
 	</li>
-    <li style="margin-top: 2vh;">
+    <li>
     <a href="https://github.com/Coder1382/REST-API-Java-PostgreSQL-Maven-SpringBoot">REST API app (Java, Spring, SQL, Postgres, Docker, Postman)</a>
 	Отношения "Один ко многим" и "Многие ко многим". Образ выложен в Docker-хабе. Видео по <a href="https://coder1382.github.io/REST-API-Java-PostgreSQL-JDBC/">ссылке</a>.
 	</li>
-    <li style="margin-top: 2vh;">
+    <li>
       <a style="padding-top: 1vh;" href="https://github.com/Coder1382/ArrayList/tree/master">ArrayList (Java Core)</a>. Моя реализация класса ArrayList.
 	</li>
-    <li style="margin-top: 2vh;">
+    <li>
       <a style="padding-top: 1vh;" href="https://github.com/Coder1382/TCP-Linux-socket">Linux Socket (C++)</a>
 	  Консольное приложение для TCP-соединения и обмена данными между сервером и клиентами.
 	</li>
-	<li style="margin-top: 2vh;">
+	<li>
 		<a style="padding-top: 1vh;" href="https://github.com/Coder1382/WEB-App-TeleBot">TeleBot (Pyhton, JavaScript, Telegram)</a>.
 		Телеграм-приложение для онлайн-заказа еды. Сайт по <a href="https://coder1382.github.io/Supplement-to-WEB-App-Telebot/">ссылке</a>.
 	</li>
 </ul>
-  </section></br>
+  </section>
 </body>
 <script>
   function reset(){
