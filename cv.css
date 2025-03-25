@@ -145,4 +145,7 @@ td{
 .show{
 	display: block;
 }
+#Name{
+	display: block;
+}
 }
