@@ -135,6 +135,7 @@ input:not([type=submit]), textarea{
 }
 td{
   padding: .3vw .8vw;
+  text-align: left;
 }
 #summary, #pets, #{
   width: 90vw;
@@ -144,5 +145,8 @@ td{
 }
 .show{
 	display: block;
+}
+#name{
+	padding-left: 0;
 }
 }
